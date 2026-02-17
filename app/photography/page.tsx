@@ -36,8 +36,9 @@ export default function Photography() {
                             <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Nagoya</a>
                         </div>
                         <div className="flex flex-col">
-                            <div>Misc.</div>
+                            <div>—</div>
                             <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Climbers</a>
+                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Life in HK</a>
                         </div>
                     </div>
                 </div>

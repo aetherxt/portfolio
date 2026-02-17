@@ -79,7 +79,8 @@ export default function Projects() {
                     <div className="flex flex-col gap-2">
                         <a href="https://github.com/aetherxt/lastfm-time-tracker" target="_blank" rel="noopener noreferrer" className="sm:text-xl font-medium text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 w-fit">Last.FM Time Tracker</a>
                         <div className="text-md opacity-70 mb-2">Flask, Tailwind CSS</div>
-                        <div className="text-md">Uses last.fm data to chart using listening time instead of plays</div>
+                        <div>Songs aren't (and shouldn't) all be 3 minutes long. So why are is your music tracked based on # of plays?</div>
+                        <div className="text-md">Uses last.fm data to chart your listening based on time</div>
                     </div>
                     <div className="flex flex-col gap-2">
                         <div className="sm:text-xl font-medium">Discord Wordle Scraper</div>
