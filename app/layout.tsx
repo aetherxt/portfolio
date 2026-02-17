@@ -18,7 +18,7 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata: Metadata = {
-  title: "MLAW",
+  title: "Marcus Law",
   description: "Portfolio",
 };
 

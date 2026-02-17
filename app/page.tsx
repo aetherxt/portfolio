@@ -21,11 +21,11 @@ export default function Home() {
     <div>
       <div className="flex flex-col h-full bg-stone-50 font-[Geist_Mono] dark:bg-stone-900 selection:bg-indigo-100 selection:text-indigo-900">
         <Navbar />
-        <div className="px-15 sm:px-30 pt-2 pb-30">
+        <div className="px-15 sm:px-30 pt-5 sm:pt-2 pb-30">
           <div className="flex flex-col justify-start gap-4">
-            <div className="text-4xl sm:text-6xl font-medium">Marcus Law</div>
+            <div className="text-2xl sm:text-4xl font-medium">Marcus Law</div>
           </div>
-          <div className="flex flex-col pl-5 pt-10 gap-2">
+          <div className="flex flex-col pl-5 pt-8 gap-2">
             <div className="text-md">First year undergraduate student studying at the University of Hong Kong.</div>
             <div className="text-md">I use Python, TypeScript and C++</div>
             <div className="text-md">ML Packages - Pytorch, Scikit-learn, OpenCV, Selenium</div>
@@ -58,8 +58,8 @@ export default function Home() {
           </div>
           <div className="flex flex-col pl-5 pt-8">
             <div className="text-md pb-2 underline">Explore:</div>
-            <a href="/projects" className="dark:text-indigo-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">projects</a>
-            <a href="/photography" className="dark:text-indigo-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">photography</a>
+            <a href="/projects" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">projects</a>
+            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">photography</a>
           </div>
         </div>
       </div>
