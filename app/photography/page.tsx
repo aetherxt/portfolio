@@ -54,7 +54,7 @@ export default function Photography() {
                     </div>
                 </div>
                 <div className="text-5xl pt-5">—</div>
-                <div className="text-xl font-medium">Top 100</div>
+                <div className="text-xl font-medium">Showcase</div>
                 <ImageGallery images={imageFiles} basePath="/photography/select" />
                 <BackToTop />
             </div>
