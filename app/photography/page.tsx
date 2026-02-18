@@ -13,7 +13,7 @@ export default function Photography() {
                 </div>
                 <div className="flex flex-col pt-8">
                     <div className="text-md pb-2 underline">Collections:</div>
-                    <div className="flex flex-row flex-wrap gap-10 sm:gap-15">
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-5">
                         <div className="flex flex-col">
                             <div>2026</div>
                             <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Awaji</a>
@@ -22,14 +22,14 @@ export default function Photography() {
                             <div>2025</div>
                             <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Langkawi</a>
                             <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Europe</a>
-                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">27/05</a>
+                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">HK 27/05</a>
                         </div>
                         <div className="flex flex-col">
                             <div>2024</div>
                             <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Australia</a>
-                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">12/04</a>
-                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">24/03</a>
-                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">07/02</a>
+                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">HK 12/04</a>
+                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">HK 24/03</a>
+                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">HK 07/02</a>
                         </div>
                         <div className="flex flex-col">
                             <div>2023</div>
@@ -38,12 +38,12 @@ export default function Photography() {
                         <div className="flex flex-col">
                             <div>—</div>
                             <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Climbers</a>
-                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Life in HK</a>
+                            <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">HK Misc.</a>
                         </div>
                     </div>
                 </div>
                 <div className="text-5xl pt-5">—</div>
-                
+                <div className="text-xl font-medium">Best Works</div>
             </div>
         </div>
     );

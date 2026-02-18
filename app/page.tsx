@@ -23,9 +23,9 @@ export default function Home() {
         <Navbar />
         <div className="px-15 sm:px-30 pt-5 sm:pt-2 pb-30">
           <div className="flex flex-col justify-start gap-4">
-            <div className="text-2xl sm:text-4xl font-medium">Marcus Law</div>
+            <div className="text-3xl sm:text-4xl font-medium">Marcus Law</div>
           </div>
-          <div className="flex flex-col pl-5 pt-8 gap-2">
+          <div className="flex flex-col pl-5 pt-5 sm:pt-8 gap-2">
             <div className="text-md">First year undergraduate student studying at the University of Hong Kong.</div>
             <div className="text-md">I use Python, TypeScript and C++</div>
             <div className="text-md">ML Packages - Pytorch, Scikit-learn, OpenCV, Selenium</div>

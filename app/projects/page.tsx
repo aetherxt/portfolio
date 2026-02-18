@@ -66,19 +66,19 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className="sm:text-5xl py-10">—</div>
-                <div className="flex flex-col justify-start gap-4">
+                <div className="flex flex-col justify-start gap-4 pr-10">
                     <div className="text-xl sm:text-2xl font-medium">Casual Projects</div>
                     <div className="sm:text-md">Slightly useful projects for fun / everyday use</div>
                 </div>
-                <div className="flex flex-col pl-5 pr-20 pt-10 gap-8 sm:gap-10">
+                <div className="flex flex-col pl-5 pr-10 pt-8 sm:pt-10 gap-8 sm:gap-10">
                     <div className="flex flex-col gap-2">
                         <a href="https://github.com/aetherxt/dotfiles" target="_blank" rel="noopener noreferrer" className="sm:text-xl font-medium text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 w-fit">dotfiles</a>
-                        <div className="text-md opacity-70 mb-2">Bash, Quickshell</div>
+                        <div className="text-md opacity-70 sm:mb-2">Bash, Quickshell</div>
                         <div className="text-md">Dotfiles for my arch (btw) / hyprland setup</div>
                     </div>
                     <div className="flex flex-col gap-2">
                         <a href="https://github.com/aetherxt/lastfm-time-tracker" target="_blank" rel="noopener noreferrer" className="sm:text-xl font-medium text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 w-fit">Last.FM Time Tracker</a>
-                        <div className="text-md opacity-70 mb-2">Flask, Tailwind CSS</div>
+                        <div className="text-md opacity-70 sm:mb-2">Flask, Tailwind CSS</div>
                         <div>Songs aren't (and shouldn't) all be 3 minutes long. So why are is your music tracked based on # of plays?</div>
                         <div className="text-md">Uses last.fm data to chart your listening based on time</div>
                     </div>
