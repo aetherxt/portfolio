@@ -16,6 +16,22 @@ const FISH_COLORS = [
     'text-cyan-500'
 ];
 
+const ROCK_COLORS = [
+    'text-stone-400 dark:text-stone-500',
+    'text-stone-500 dark:text-stone-400',
+    'text-stone-600 dark:text-stone-300',
+    'text-amber-700 dark:text-amber-600',
+    'text-orange-800 dark:text-orange-700',
+    'text-yellow-800 dark:text-yellow-700',
+    'text-lime-800 dark:text-lime-700',
+    'text-emerald-800 dark:text-emerald-700',
+    'text-teal-800 dark:text-teal-700',
+    'text-cyan-800 dark:text-cyan-700',
+    'text-indigo-800 dark:text-indigo-700',
+    'text-purple-800 dark:text-purple-700',
+];
+
+
 export default function AsciiAquarium() {
     const [frame, setFrame] = useState(0);
     const [fishes, setFishes] = useState<{ x: number, y: number, dx: number, direction: string, color: string }[]>([]);
@@ -30,28 +46,33 @@ export default function AsciiAquarium() {
             if (Math.random() > 0.3) {
                 const type = Math.random();
                 let char = '.';
-                let color = 'text-stone-400 dark:text-stone-500';
-                if (type > 0.8) { char = 'O'; color = 'text-stone-500 dark:text-stone-400'; }
-                else if (type > 0.5) { char = 'o'; color = 'text-stone-600 dark:text-stone-500'; }
-                else if (type > 0.2) { char = '•'; color = 'text-stone-400 dark:text-stone-600'; }
-                else { char = '.'; color = 'text-stone-500 dark:text-stone-700'; }
+                const color = ROCK_COLORS[Math.floor(Math.random() * ROCK_COLORS.length)];
+
+                if (type > 0.8) { char = 'O'; }
+                else if (type > 0.5) { char = 'o'; }
+                else if (type > 0.2) { char = '•'; }
+                else { char = '.'; }
+
                 newRocks.push({ x, char, color });
             }
         }
         setRocks(newRocks);
 
         const newSeaweed: { x: number, height: number }[] = [];
-        const seaweedCount = Math.floor(Math.random() * 6) + 3;
-        for (let i = 0; i < seaweedCount; i++) {
-            newSeaweed.push({
-                x: Math.floor(Math.random() * (WIDTH - 4)) + 2,
-                height: Math.floor(Math.random() * 5) + 2
-            });
+
+        for (let x = 1; x < WIDTH - 1; x++) {
+            if (Math.random() > 0.6) {
+                const minHeight = 1;
+                const maxHeight = 5;
+                const height = Math.floor(Math.pow(Math.random(), 4) * (maxHeight - minHeight + 1)) + minHeight;
+                newSeaweed.push({ x, height });
+            }
         }
+
         setSeaweed(newSeaweed);
 
         const newFishes: { x: number, y: number, dx: number, direction: string, color: string }[] = [];
-        const fishCount = Math.floor(Math.random() * 4) + 1;
+        const fishCount = Math.floor(Math.random() * 3) + 2;
         for (let i = 0; i < fishCount; i++) {
             const dx = Math.random() > 0.5 ? 1 : -1;
             newFishes.push({
