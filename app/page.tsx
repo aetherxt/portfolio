@@ -24,7 +24,7 @@ export default function Home() {
         <Navbar />
         <div className="px-15 sm:px-30 pt-5 sm:pt-2 pb-30">
           <div className="flex flex-col justify-start gap-4">
-            <div className="pb-2 sm:py-2">
+            <div className="pb-2 sm:py-2 hidden min-[400px]:block">
               <AsciiAquarium />
             </div>
             <div className="text-3xl sm:text-4xl font-medium">Marcus Law</div>

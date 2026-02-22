@@ -72,7 +72,7 @@ export default function AsciiAquarium() {
         setSeaweed(newSeaweed);
 
         const newFishes: { x: number, y: number, dx: number, direction: string, color: string }[] = [];
-        const fishCount = Math.floor(Math.random() * 3) + 2;
+        const fishCount = Math.floor(Math.random() * 2) + 2;
         for (let i = 0; i < fishCount; i++) {
             const dx = Math.random() > 0.5 ? 1 : -1;
             newFishes.push({
