@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export default function InstagramLink() {
     const [isHovered, setIsHovered] = useState(false);
-    const displayInstagram = '@mlaw.photo';
+    const displayInstagram = "@mlaw.photo";
     const instagramUrl = 'https://instagram.com/mlaw.photo/';
 
     return (
@@ -14,7 +14,7 @@ export default function InstagramLink() {
             onMouseLeave={() => setIsHovered(false)}
             onClick={() => window.open(instagramUrl, '_blank')}
         >
-            {isHovered ? displayInstagram : 'Instagram'}
+            {isHovered ? displayInstagram : '-> Instagram'}
         </div>
     );
 }

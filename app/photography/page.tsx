@@ -19,6 +19,7 @@ export default function Photography() {
                     <div className="text-2xl sm:text-3xl font-medium">Photography</div>
                     <div>mostly street/travel hobby photography</div>
                     <InstagramLink />
+                    <div className="underline">Gear:</div>
                     <div>Camera: Sony A7II</div>
                     <div>Lenses: Tamron 28-75mm F/2.8, Sony 50mm F/2.5 G</div>
                 </div>
