@@ -19,6 +19,21 @@
   }
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fafaf9;
   color: var(--foreground);
@@ -46,6 +61,24 @@ body {
 .underline-animation:hover {
   text-decoration-color: oklch(25.7% 0.09 281.288);
 }
+.snap-always {
+  scroll-snap-stop: always;
+}
+
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .underline-animation:hover {
     text-decoration-color: oklch(93% 0.034 272.788);
