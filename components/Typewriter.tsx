@@ -37,7 +37,7 @@ export default function Typewriter({ text, speed = 100, startDelay = 0 }: Typewr
     }, [text, speed, started]);
 
     return (
-        <span className="inline-block relative">
+        <span className="inline-block relative whitespace-pre-line text-center">
             {displayText}
             <span className="animate-blink ml-1 inline-block bg-current w-[3px] h-[1em] align-middle translate-y-[-2px]"></span>
         </span>

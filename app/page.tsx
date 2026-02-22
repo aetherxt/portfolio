@@ -19,17 +19,30 @@ export default function Home() {
     setCopied(true);
     setTimeout(() => setCopied(false), 1000);
   };
+
+  const scrollToContent = () => {
+    const content = document.getElementById('content');
+    if (content) {
+      content.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory snap-always scroll-auto bg-stone-50 font-[Geist_Mono] dark:bg-stone-900 selection:bg-indigo-100 selection:text-indigo-900">
       <div className="h-[120vh] w-full snap-start shrink-0 relative bg-gradient-to-b from-indigo-200/75 to-stone-50 dark:from-indigo-900/50 dark:to-stone-900">
         <div className="h-screen w-full sticky top-0 flex flex-col items-center justify-center">
-          <div className="hidden min-[400px]:block absolute bottom-[60%]">
+          <div className="absolute bottom-[65%] min-[400px]:bottom-[60%]">
             <AsciiAquarium />
           </div>
-          <div className="text-6xl font-medium absolute top-1/2 -translate-y-1/2 select-none">
-            <Typewriter text="Marcus Law" speed={100} />
+          <div className="text-6xl font-medium absolute top-1/2 -translate-y-1/2 select-none w-full text-center">
+            <span className="hidden min-[400px]:block">
+              <Typewriter text="Marcus Law" speed={100} />
+            </span>
+            <span className="block min-[400px]:hidden">
+              <Typewriter text={`Marcus\nLaw`} speed={100} />
+            </span>
           </div>
-          <div className="absolute bottom-20 animate-bounce">
+          <div onClick={scrollToContent} className="absolute bottom-20 animate-bounce cursor-pointer">
             <svg
               className="w-10 h-10 text-stone-900 dark:text-stone-100"
               fill="none"
