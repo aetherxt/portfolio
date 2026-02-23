@@ -3,15 +3,14 @@
 import Navbar from "@/components/navbar";
 import AsciiAquarium from "@/components/AsciiAquarium";
 import Typewriter from "@/components/Typewriter";
+import ExternalLink from "@/components/ExternalLink";
 import { useState } from "react";
 
 export default function Home() {
   const [isEmailHovered, setIsEmailHovered] = useState(false);
-  const [isGithubHovered, setIsGithubHovered] = useState(false);
   const [copied, setCopied] = useState(false);
   const displayEmail = "axlaw.marcus [at] gmail (dot) com";
   const copiedEmail = "axlaw.marcus@gmail.com";
-  const displayGithub = "@aetherxt";
   const githubUrl = "https://github.com/aetherxt";
 
   const handleCopyEmail = () => {
@@ -29,7 +28,7 @@ export default function Home() {
 
   return (
     <div className="h-screen w-full overflow-y-scroll snap-y snap-mandatory snap-always scroll-auto bg-stone-50 font-[Geist_Mono] dark:bg-stone-900 selection:bg-indigo-100 selection:text-indigo-900">
-      <div className="h-[120vh] w-full snap-start shrink-0 relative bg-gradient-to-b from-indigo-200/75 to-stone-50 dark:from-indigo-900/50 dark:to-stone-900">
+      <div className="h-[120vh] w-full snap-start shrink-0 relative bg-gradient-to-b from-indigo-200/60 to-stone-50 dark:from-indigo-800/50 dark:to-stone-900">
         <div className="h-screen w-full sticky top-0 flex flex-col items-center justify-center">
           <div className="absolute bottom-[65%] min-[400px]:bottom-[60%]">
             <AsciiAquarium />
@@ -61,7 +60,7 @@ export default function Home() {
       </div>
       <div id="content" className="min-h-screen w-full flex flex-col snap-start shrink-0">
         <Navbar />
-        <div className="px-15 sm:px-30 pt-5 sm:pt-2 pb-30">
+        <div className="px-15 sm:px-30 pt-5 sm:pt-2 pb-25">
           <div className="text-3xl sm:text-4xl font-medium pt-4">Marcus Law</div>
           <div className="flex flex-col pl-5 pt-5 sm:pt-8 gap-2">
             <div className="text-md">
@@ -85,22 +84,40 @@ export default function Home() {
           </div>
           <div className="flex flex-row pl-5 pt-8">
             <div className="text-md pr-3">Me - </div>
-            <div
-              className="text-md pr-2 cursor-pointer transition-all"
-              onMouseEnter={() => setIsGithubHovered(true)}
-              onMouseLeave={() => setIsGithubHovered(false)}
-              onClick={() => window.open(githubUrl, "_blank")}
-            >
-              {isGithubHovered ? displayGithub : "Github"}
-            </div>
+            <ExternalLink
+              text="Github"
+              hoverText="@aetherxt"
+              url={githubUrl}
+              className="text-md"
+            />
             <div className="text-md pr-2">|</div>
             <div
-              className="text-md pr-2 cursor-pointer transition-all"
+              className="text-md pr-2 cursor-pointer transition-all flex items-center gap-1"
               onMouseEnter={() => setIsEmailHovered(true)}
               onMouseLeave={() => setIsEmailHovered(false)}
               onClick={handleCopyEmail}
             >
-              {copied ? "Copied!" : isEmailHovered ? displayEmail : "Email"}
+              {copied ? (
+                "Copied!"
+              ) : isEmailHovered ? (
+                displayEmail
+              ) : (
+                <>
+                  <span className="underline decoration-current/70 underline-offset-4">Email</span>
+                  <svg
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M7 17l9.2-9.2M17 17V7H7" />
+                  </svg>
+                </>
+              )}
             </div>
           </div>
           <div className="flex flex-col pl-5 pt-8">

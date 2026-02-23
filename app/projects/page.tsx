@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Navbar from '@/components/navbar';
+import ExternalLink from '@/components/ExternalLink';
 
 type PosterKey = 'asm' | 'agu' | null;
 
@@ -39,7 +40,7 @@ export default function Projects() {
                     <div className="text-2xl sm:text-3xl font-medium">Projects</div>
                     <div className="sm:text-md">An overview of my programming projects & relevant co-curriculars</div>
                 </div>
-                <div className="flex flex-col pl-5 pr-20 pt-10 gap-8 sm:gap-10">
+                <div className="flex flex-col pl-5 pt-10 gap-8 sm:gap-10">
                     <div className="flex flex-col gap-2">
                         <div className="sm:text-xl font-medium">ASM Microbe 2023</div>
                         <div>American Society of Microbiology (ASM) Conference @ Houston, TX</div>
@@ -72,19 +73,28 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-col pl-5 pr-10 pt-8 sm:pt-10 gap-8 sm:gap-10">
                     <div className="flex flex-col gap-2">
-                        <a href="https://github.com/aetherxt/dotfiles" target="_blank" rel="noopener noreferrer" className="sm:text-xl font-medium text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 w-fit">dotfiles</a>
+                        <ExternalLink
+                            text="dotfiles"
+                            url="https://github.com/aetherxt/dotfiles"
+                            className="sm:text-xl font-medium hover:text-blue-900 hover:dark:text-blue-200"
+                        />
                         <div className="text-md opacity-70 sm:mb-2">Bash, Quickshell</div>
                         <div className="text-md">Dotfiles for my arch (btw) / hyprland setup</div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <a href="https://github.com/aetherxt/lastfm-time-tracker" target="_blank" rel="noopener noreferrer" className="sm:text-xl font-medium text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 w-fit">Last.FM Time Tracker</a>
+                        <ExternalLink
+                            text="Last.FM Time Tracker"
+                            url="https://github.com/aetherxt/lastfm-time-tracker"
+                            className="sm:text-xl font-medium hover:text-blue-900 hover:dark:text-blue-200"
+                        />
                         <div className="text-md opacity-70 sm:mb-2">Flask, Tailwind CSS</div>
                         <div>Songs aren't (and shouldn't) all be 3 minutes long. So why are is your music tracked based on # of plays?</div>
                         <div className="text-md">Uses last.fm data to chart your listening based on time</div>
                     </div>
                     <div className="flex flex-col gap-2">
                         <div className="sm:text-xl font-medium">Discord Wordle Scraper</div>
-                        <div className="text-md">Scrapes Discord wordle results and shows stats + rankings</div>
+                        <div className="text-md opacity-70 sm:mb-2">Python, Selenium</div>
+                        <div className="text-md">Scrapes past wordle results on discord and shows stats + rankings</div>
                     </div>
                 </div>
             </div>
