@@ -53,6 +53,9 @@ export default function Europe25() {
                 <div className="flex flex-col justify-start gap-2 sm:gap-4 mb-8">
                     <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">&lt; back</a>
                     <div className="text-2xl sm:text-3xl font-medium">Europe 2025</div>
+                    <div className="flex flex-col pl-5 pt-2">
+                        <div className="text-stone-800/75 dark:text-stone-200/75">First attempt at travel and storytelling in a while due to exams, definitely a bit rusty at first but still turned out alright.</div>
+                    </div>
                 </div>
                 <div className="flex flex-col gap-10">
                     {sections.map((section) => (

@@ -16,8 +16,9 @@ export default function Langkawi25() {
                 <div className="flex flex-col justify-start">
                     <a href="/photography" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">&lt; back</a>
                     <div className="text-2xl sm:text-3xl font-medium pt-2 sm:pt-5">Langkawi 2025</div>
-                    <div className="flex flex-row items-center pl-5 pt-2">
-                        <span className="text-stone-800/75 dark:text-stone-200/75">Langkawi Island | Malaysia</span>
+                    <div className="flex flex-col pl-5 pt-2 gap-3">
+                        <div className="text-stone-800/75 dark:text-stone-200/75">Langkawi Island | Malaysia</div>
+                        <div className="text-stone-800/75 dark:text-stone-200/75">Definitely proud of this one, but it was also easier to shoot because of golden hour and easy light from the fire performances.</div>
                     </div>
                 </div>
                 <ImageGallery images={imageFiles} basePath="/photography/Langkawi25" />
