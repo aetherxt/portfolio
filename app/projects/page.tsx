@@ -92,7 +92,11 @@ export default function Projects() {
                         <div className="text-md">Uses last.fm data to chart your listening based on time</div>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <a href="https://github.com/audreylai/wallstreetbeggars" target="_blank" rel="noopener noreferrer" className="sm:text-xl font-medium text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 w-fit">wallstreetbeggars</a>
+                        <ExternalLink
+                            text="wallstreetbeggars"
+                            url="https://github.com/audreylai/wallstreetbeggars"
+                            className="sm:text-xl font-medium hover:text-blue-900 hover:dark:text-blue-200"
+                        />
                         <div className="text-md opacity-70 sm:mb-2">Flask, MongoDB</div>
                         <div className="text-md">Stock analysis dashboard for the Hong Kong stock market with extensively customizable parameters, based on Yahoo Finance data.</div>
                     </div>

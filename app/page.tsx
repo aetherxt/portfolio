@@ -61,7 +61,7 @@ export default function Home() {
       <div id="content" className="min-h-screen w-full flex flex-col snap-start shrink-0">
         <Navbar />
         <div className="px-15 sm:px-30 pt-5 sm:pt-2 pb-25">
-          <div className="text-3xl sm:text-4xl font-medium pt-4">Marcus Law</div>
+          <div className="text-3xl sm:text-4xl font-medium pt-4">Marcus Law 羅浦光</div>
           <div className="flex flex-col pl-5 pt-5 sm:pt-8 gap-2">
             <div className="text-md">
               First year undergraduate student studying at the University of
