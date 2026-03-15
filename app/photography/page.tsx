@@ -35,6 +35,7 @@ export default function Photography() {
                             <div>2026</div>
                             <a href="/photography/shanghai26" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Shanghai</a>
                             <a href="/photography/awaji26" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">Awaji</a>
+                            <a href="/photography/11-3-2026" className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit">HK SZ 11/03</a>
                         </div>
                         <div className="flex flex-col">
                             <div>2025</div>
