@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -21,24 +22,30 @@ export default function Navbar() {
     return (
         <div className="flex w-full place-self-start sticky top-0 z-10 bg-gradient-to-b from-stone-50/95 via-stone-50/60 to-stone-50/0 dark:from-stone-900/95 dark:via-stone-900/60 dark:to-stone-900/0 backdrop-blur-sm">
             <div className="flex flex-col sm:flex-row sm:items-center my-10 mx-10 sm:mx-20 select-none gap-3 sm:gap-5">
-                <a
+                <Link
                     href="/#content"
                     className={linkClass("/")}
                 >
                     home
-                </a>
-                <a
+                </Link>
+                <Link
+                    href="/work"
+                    className={linkClass("/work")}
+                >
+                    work
+                </Link>
+                <Link
                     href="/projects"
                     className={linkClass("/projects")}
                 >
                     projects
-                </a>
-                <a
+                </Link>
+                <Link
                     href="/photography"
                     className={linkClass("/photography")}
                 >
                     photography
-                </a>
+                </Link>
             </div>
         </div>
     );

@@ -62,24 +62,28 @@ export default function Home() {
         <Navbar />
         <div className="px-15 sm:px-30 pt-5 sm:pt-2 pb-25">
           <div className="text-3xl sm:text-4xl font-medium pt-4">Marcus Law 羅浦光</div>
-          <div className="flex flex-col pl-5 pt-5 sm:pt-8 gap-2">
-            <div className="text-md">
-              First year undergraduate student studying at the University of
-              Hong Kong.
+          <div className="flex flex-col pl-5 pt-5 sm:pt-8 gap-5">
+            <div className="flex flex-col gap-1">
+              <div className="text-md">
+                Second year undergraduate student studying at the University of
+                Hong Kong.
+              </div>
+              <div className="text-md">
+                Bachelor of Engineering in AI & Data Science (Delta+ Fellowship)
+              </div>
             </div>
-            <div className="text-md">I use Python, TypeScript and C++</div>
-            <div className="text-md">
-              ML Packages - Pytorch, Scikit-learn, OpenCV, Selenium
-            </div>
-            <div className="text-md">
-              Web Stack - NextJS, React/Flask, Tailwind CSS, MongoDB/SQL
-            </div>
-            <div className="text-md">
-              Currently learning bioinformatics and bioconda
+            <div className="flex flex-col gap-1">
+              <div className="text-md">I use Python, TypeScript and C++</div>
+              <div className="text-md">
+                ML Packages - Pytorch, Scikit-learn, OpenCV, Selenium
+              </div>
+              <div className="text-md">
+                Web Stack - NextJS, React/Flask, Tailwind CSS, MongoDB/SQL
+              </div>
             </div>
           </div>
-          <div className="flex flex-col pl-5 pt-8 gap-2">
-            <div className="text-md">Arts - photography, guitar, violin</div>
+          <div className="flex flex-col pl-5 pt-8 gap-1">
+            <div className="text-md">Arts - photography, guitar</div>
             <div className="text-md">Sports - swimming, golf, volleyball</div>
           </div>
           <div className="flex flex-row pl-5 pt-8">
@@ -122,6 +126,12 @@ export default function Home() {
           </div>
           <div className="flex flex-col pl-5 pt-8">
             <div className="text-md pb-2 underline">Explore:</div>
+            <a
+              href="/work"
+              className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit"
+            >
+              work
+            </a>
             <a
               href="/projects"
               className="text-blue-900 dark:text-blue-100 hover:bg-indigo-100 hover:text-indigo-900 ml-3 w-fit"
