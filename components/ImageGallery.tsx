@@ -200,12 +200,12 @@ export default function ImageGallery({ images, basePath }: ImageGalleryProps) {
                     const originalCenterX = imageRect.left + imageRect.width / 2;
                     const originalCenterY = imageRect.top + imageRect.height / 2;
 
-                    // Scale to fit 90vw/90vh while maintaining aspect ratio
+                    // Scale to 85vh while keeping the popup inside the viewport width.
                     const maxWidth = window.innerWidth * 0.9;
-                    const maxHeight = window.innerHeight * 0.9;
+                    const maxHeight = window.innerHeight * 0.85;
                     const scaleX = maxWidth / imageRect.width;
                     const scaleY = maxHeight / imageRect.height;
-                    const scale = Math.min(scaleX, scaleY, 2); // Cap at 2x
+                    const scale = Math.min(scaleX, scaleY);
 
                     // Calculate translation to center the scaled image
                     // When scaling from top-left (transformOrigin: 'top left'), the element expands right and down.
