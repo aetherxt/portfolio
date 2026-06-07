@@ -18,7 +18,6 @@ export default function Australia24() {
                     <div className="text-2xl sm:text-3xl font-medium pt-2 sm:pt-5">Australia 2024</div>
                     <div className="flex flex-col pl-5 pt-2 gap-3">
                         <div className="text-stone-800/75 dark:text-stone-200/75">Sunshine Coast | Australia</div>
-                        <div className="text-stone-800/75 dark:text-stone-200/75">Fun photos for a high school adventure trip, shot on a old point and shoot.</div>
                     </div>
                 </div>
                 <ImageGallery images={imageFiles} basePath="/photography/Australia24" />

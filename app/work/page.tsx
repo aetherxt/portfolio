@@ -17,14 +17,14 @@ export default function Work() {
                             <div className="text-md leading-7 sm:text-xl sm:leading-9">
                                 Summer Intern
                             </div>
-                            <div className="text-sm text-stone-600 sm:text-base dark:text-current dark:opacity-75">@ Robocode Academy</div>
+                            <div className="text-sm text-stone-600 [word-spacing:-0.25em] sm:text-base dark:text-current dark:opacity-75">@ Robocode Academy</div>
                         </div>
                         <div className="flex flex-col gap-1">
                             <div className="text-sm sm:text-base">
                                 Designed multiple advanced GenAI courses for High School students.
                             </div>
                             <div className="flex flex-col gap-2 pt-1 leading-5 text-stone-600 mb-2 text-sm sm:text-base dark:text-current dark:opacity-75">
-                                <div>Designed classes and student projects, worked as teaching assistant to facilitiate course effectiveness.</div>
+                                <div>Designed classes and student projects, worked as teaching assistant to stress test courses.</div>
                                 <div>Topics include frontend LLM-integration, webscraping and data science.</div>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ export default function Work() {
                             <div className="text-md leading-7 sm:text-xl sm:leading-9">
                                 Legal Intern
                             </div>
-                            <div className="text-sm text-stone-600 sm:text-base dark:text-current dark:opacity-75">@ T.K. Tsui & Co.</div>
+                            <div className="text-sm text-stone-600 [word-spacing:-0.25em] sm:text-base dark:text-current dark:opacity-75">@ T.K. Tsui & Co.</div>
                         </div>
                         <div className="flex flex-col gap-2">
                             <div className="text-sm sm:text-base">
@@ -49,13 +49,13 @@ export default function Work() {
                             <div className="text-md leading-7 sm:text-xl sm:leading-9">
                                 Teaching Assistant
                             </div>
-                            <div className="text-sm text-stone-600 sm:text-base dark:text-current dark:opacity-75">@ Robocode Academy</div>
+                            <div className="text-sm text-stone-600 [word-spacing:-0.25em] sm:text-base dark:text-current dark:opacity-75">@ Robocode Academy</div>
                         </div>
                         <div className="flex flex-col gap-2">
                             <div className="text-sm sm:text-base">
                                 Taught a 1 week beginner level workshop on GenAI.
                             </div>
-                            <div className="flex flex-col gap-2 pt-1 leading-5 text-stone-600 mb-2 text-xs sm:text-sm dark:text-current dark:opacity-75">
+                            <div className="flex flex-col gap-2 pt-1 leading-5 text-stone-600 mb-2 text-sm sm:text-base dark:text-current dark:opacity-75">
                                 <div>Topics include prompt engineering, text-to-image and text-to-video.</div>
                             </div>
                         </div>

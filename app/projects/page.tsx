@@ -54,7 +54,7 @@ export default function Projects() {
                             <div className="relative flex flex-col gap-2">
                                 <div className="text-sm text-stone-600 sm:text-lg dark:text-current dark:opacity-65">April 2026</div>
                                 <div className="sm:text-xl font-medium">HKU CCGL9070</div>
-                                <div className="text-sm sm:text-base">Presentation In-course and Learning Festival.</div>
+                                <div className="text-sm sm:text-base">Presentation In-course and during the HKU Learning Festival.</div>
                                 <div className="flex flex-col gap-1 pt-1 leading-5 text-stone-600 mb-2 text-sm sm:text-base dark:text-current dark:opacity-75">
                                     <div>Initial research and poster for HKU course CCGL9070.</div>
                                 </div>

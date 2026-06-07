@@ -18,7 +18,6 @@ export default function Awaji26() {
                     <div className="text-2xl sm:text-3xl font-medium pt-2 sm:pt-5">Awaji 2026</div>
                     <div className="flex flex-col pl-5 pt-2 gap-3">
                         <span className="text-stone-800/75 dark:text-stone-200/75">Awaji; Tokushima; Kobe; Osaka | Japan</span>
-                        <div className="text-stone-800/75 dark:text-stone-200/75">Definitely more travel style, but still turned out ok. Worked on the wide angle a bit more.</div>
                     </div>
                 </div>
                 <ImageGallery images={imageFiles} basePath="/photography/Awaji26" />

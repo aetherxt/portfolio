@@ -18,7 +18,6 @@ export default function Nagoya23() {
                     <div className="text-2xl sm:text-3xl font-medium pt-2 sm:pt-5">Nagoya 2023</div>
                     <div className="flex flex-col pl-5 pt-2 gap-3">
                         <div className="text-stone-800/75 dark:text-stone-200/75">Nagoya; Shirakawa; Kanazawa; Kaga | Japan</div>
-                        <div className="text-stone-800/75 dark:text-stone-200/75">First go at photography, some good compositions but definitely wasn't sure how to frame and expose properly yet.</div>
                     </div>
                 </div>
                 <ImageGallery images={imageFiles} basePath="/photography/Nagoya23" />

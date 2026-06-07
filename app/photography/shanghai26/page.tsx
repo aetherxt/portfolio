@@ -18,7 +18,6 @@ export default function Shanghai26() {
                     <div className="text-2xl sm:text-3xl font-medium pt-2 sm:pt-5">Shanghai 2026</div>
                     <div className="flex flex-col pl-5 pt-2 gap-3">
                         <div className="text-stone-800/75 dark:text-stone-200/75">Zhangjiang; Shanghai | China</div>
-                        <div className="text-stone-800/75 dark:text-stone-200/75">50mm prime only, was definitely harder to compose. Might consider a wide angle only next time.</div>
                     </div>
                 </div>
                 <ImageGallery images={imageFiles} basePath="/photography/Shanghai26" />
