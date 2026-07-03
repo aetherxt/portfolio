@@ -119,6 +119,15 @@ export default function Projects() {
                 <div className="flex flex-col pl-5 pr-10 pt-8 sm:pt-10 gap-8 sm:gap-10">
                     <div className="flex flex-col gap-2">
                         <ExternalLink
+                            text="Power Logger"
+                            url="https://github.com/aetherxt/power-logger"
+                            className="sm:text-xl font-medium hover:text-blue-900 hover:dark:text-blue-200"
+                        />
+                        <div className="text-md text-stone-600 sm:mb-2 dark:text-current dark:opacity-70">Python, Flask, Chart.js</div>
+                        <div className="text-md">Live battery power monitor + CSV data logger for Linux laptops.</div>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <ExternalLink
                             text="dotfiles"
                             url="https://github.com/aetherxt/dotfiles"
                             className="sm:text-xl font-medium hover:text-blue-900 hover:dark:text-blue-200"
@@ -133,8 +142,7 @@ export default function Projects() {
                             className="sm:text-xl font-medium hover:text-blue-900 hover:dark:text-blue-200"
                         />
                         <div className="text-md text-stone-600 sm:mb-2 dark:text-current dark:opacity-70">Flask, Tailwind CSS</div>
-                        <div>Songs aren&apos;t (and shouldn&apos;t) all be 3 minutes long. So why are is your music tracked based on # of plays?</div>
-                        <div className="text-md">Uses last.fm data to chart your listening based on time.</div>
+                        <div className="text-md">Uses last.fm data to chart your listening based on time instead of plays.</div>
                     </div>
                     <div className="flex flex-col gap-2">
                         <ExternalLink
