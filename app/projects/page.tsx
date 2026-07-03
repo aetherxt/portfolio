@@ -137,6 +137,15 @@ export default function Projects() {
                     </div>
                     <div className="flex flex-col gap-2">
                         <ExternalLink
+                            text="Wallhaven Downloader"
+                            url="https://github.com/aetherxt/wallhaven-downloader"
+                            className="sm:text-xl font-medium hover:text-blue-900 hover:dark:text-blue-200"
+                        />
+                        <div className="text-md text-stone-600 sm:mb-2 dark:text-current dark:opacity-70">Python, Selenium</div>
+                        <div className="text-md">Download wallpapers from wallhaven.cc using Selenium.</div>
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <ExternalLink
                             text="Last.FM Time Tracker"
                             url="https://github.com/aetherxt/lastfm-time-tracker"
                             className="sm:text-xl font-medium hover:text-blue-900 hover:dark:text-blue-200"
