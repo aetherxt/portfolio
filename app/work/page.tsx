@@ -25,13 +25,13 @@ export default function Work() {
                             </div>
                             <div className="flex flex-col gap-2 pt-1 leading-5 text-stone-600 mb-2 text-sm sm:text-base dark:text-current dark:opacity-75">
                                 <div>Designed classes and student projects, worked as teaching assistant to stress test courses.</div>
-                                <div>Topics include frontend LLM-integration, webscraping and data science.</div>
+                                <div>Specifics under NDA.</div>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-3">
                         <div className="flex flex-col gap-1 max-w-5xl">
-                            <div className="text-base font-medium sm:text-xl">May - June 2026</div>
+                            <div className="text-base font-medium sm:text-xl">May - August 2026</div>
                             <div className="text-md leading-7 sm:text-xl sm:leading-9">
                                 Legal Intern
                             </div>
@@ -56,7 +56,7 @@ export default function Work() {
                                 Taught a 1 week beginner level workshop on GenAI.
                             </div>
                             <div className="flex flex-col gap-2 pt-1 leading-5 text-stone-600 mb-2 text-sm sm:text-base dark:text-current dark:opacity-75">
-                                <div>Topics include prompt engineering, text-to-image and text-to-video.</div>
+                                <div>Topics include prompt engineering, image-to-text, text-to-image and text-to-video.</div>
                             </div>
                         </div>
                     </div>
